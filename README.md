@@ -1,7 +1,7 @@
 # BrainBot
 
 ## About
-BrainBot is a Discord bot designed to bring entertainment and fun to your server. With a variety of commands, BrainBot allows you to access different APIs to fetch advice, memes, activities, text overlays, pickup lines, responses from a chatbot, and many more! Programmed with Python, and utilized libraries like Discord.py and Requests.
+BrainBot is a Discord bot designed to bring entertainment and fun to your server. With a variety of commands, BrainBot allows you to access different APIs to fetch advice, memes, activities, text overlays, pickup lines, translations, and many more! Programmed with Python, and utilized libraries like Discord.py and Requests.
 
 ## Getting Started
 1. Install these (preferably the latest versions)
@@ -37,12 +37,12 @@ BrainBot is a Discord bot designed to bring entertainment and fun to your server
 - !grave or !grave `member`
 - !npc `text1` | `text2`
 - !sign `text`
+- !carreverse `text`
 
 ### Returning a Message
 - !hello
 - !pickuplines
 - !dm `member` `message`
-- !chatbot `msg`
 - !joke
 - !wyr
 - !translate `lang` `text`
