@@ -64,7 +64,7 @@ class Image(commands.Cog):
         await ctx.send(response.url)
 
     @commands.command()
-    async def carreverse(self, ctx, text):
+    async def carreverse(self, ctx, *, text):
         response = requests.get(f"https://vacefron.nl/api/carreverse?text={text}")
         await ctx.send(response.url)
 
