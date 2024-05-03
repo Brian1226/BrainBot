@@ -51,5 +51,19 @@ BrainBot is a Discord bot designed to bring entertainment and fun to your server
 - !advice
 - !activity
 
+### Returning a GIF
+- !angry
+- !bite
+- !blush
+- !comfy
+- !cry
+- !cuddle
+- !hug
+- !kiss
+- !lick
+- !pet
+- !poke
+- !slap
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
