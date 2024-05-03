@@ -19,10 +19,5 @@ class Events(commands.Cog):
     async def on_member_remove(self, member):
         await member.guild.system_channel.send(f"Bye, {member}")
 
-    @commands.Cog.listener()
-    async def on_command_error(self, ctx, error):
-        if isinstance(error, commands.MissingPermission):
-            await ctx.send("You don't have permission to run this command!")
-
 async def setup(client):
     await client.add_cog(Events(client))

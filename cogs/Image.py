@@ -10,7 +10,6 @@ class Image(commands.Cog):
     async def jail(self, ctx, member:discord.Member = None):
         if not member:
             member = ctx.author
-
         if member.avatar:
             response = requests.get(f"https://api.popcat.xyz/jail?image={member.avatar.url}")
             await ctx.send(response.url)
@@ -21,7 +20,6 @@ class Image(commands.Cog):
     async def hue(self, ctx, degree, member:discord.Member = None):
             if not member:
                 member = ctx.author
-
             if member.avatar:
                 response = requests.get(f"https://api.popcat.xyz/hue-rotate?img={member.avatar.url}&deg={degree}")
                 await ctx.send(response.url)
@@ -48,7 +46,6 @@ class Image(commands.Cog):
     async def grave(self, ctx, member:discord.Member = None):
         if not member:
             member = ctx.author
-        
         if member.avatar:
             response = requests.get(f"https://vacefron.nl/api/grave?user={member.avatar.url}")
             await ctx.send(response.url)
@@ -64,6 +61,11 @@ class Image(commands.Cog):
     @commands.command()
     async def sign(self, ctx, *, text):
         response = requests.get(f"https://vacefron.nl/api/peeposign?text={text}")
+        await ctx.send(response.url)
+
+    @commands.command()
+    async def carreverse(self, ctx, text):
+        response = requests.get(f"https://vacefron.nl/api/carreverse?text={text}")
         await ctx.send(response.url)
 
 async def setup(client):
